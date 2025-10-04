@@ -1,4 +1,4 @@
-package l1_3
+package main
 
 import (
 	"fmt"

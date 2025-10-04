@@ -1,11 +1,11 @@
-package l1_2
+package main
 
 import (
 	"fmt"
 	"sync"
 )
 
-func Start() {
+func main() {
 	numbers := []int{2, 4, 6, 8, 10}
 
 	var wg sync.WaitGroup

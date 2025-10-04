@@ -1,4 +1,4 @@
-package l1_1
+package main
 
 import "fmt"
 
@@ -20,7 +20,7 @@ func (a *action) ActionLog() {
 	fmt.Printf("%s выполнил действие: %s \n", a.Name, a.ActionDesc)
 }
 
-func Start() {
+func main() {
 	action := action{human: human{
 		Name: "Nikita",
 		Age:  19,
