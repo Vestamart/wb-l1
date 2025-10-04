@@ -2,26 +2,26 @@ package l1_1
 
 import "fmt"
 
-type Human struct {
+type human struct {
 	Name string
 	Age  int
 }
 
-type Action struct {
-	Human
+type action struct {
+	human
 	ActionDesc string
 }
 
-func (h *Human) Greeting() {
+func (h *human) Greeting() {
 	fmt.Printf("%s ему %d лет.\n", h.Name, h.Age)
 }
 
-func (a *Action) ActionLog() {
+func (a *action) ActionLog() {
 	fmt.Printf("%s выполнил действие: %s \n", a.Name, a.ActionDesc)
 }
 
 func Start() {
-	action := Action{Human: Human{
+	action := action{human: human{
 		Name: "Nikita",
 		Age:  19,
 	},
