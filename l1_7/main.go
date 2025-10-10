@@ -33,5 +33,5 @@ func main() {
 	expectedTotal := numGoroutines * 1000
 
 	fmt.Printf("Expected total value: %d\n", expectedTotal)
-	fmt.Printf("Actual total value: %d\n", finalVal.(int))
+	fmt.Printf("Actual total value:%d\n", finalVal.(int))
 }
